@@ -100,6 +100,16 @@ Then, you can use the `tickets.py` script:
     python3 tickets.py view 1
     ```
 
+*   **Update a Ticket (replace `<ID>` with an actual ID, provide all fields):**
+    ```bash
+    python3 tickets.py update <ID> --name "New Name" --email "new@example.com" --subject "Updated Subject" --body "Updated body content." --status "Closed" --priority "High"
+    ```
+
+*   **Delete a Ticket (replace `<ID>` with an actual ID):**
+    ```bash
+    python3 tickets.py delete <ID>
+    ```
+
 #### **C. Support Dashboard (Vanilla JavaScript)**
 
 1.  Open your web browser (on Windows).

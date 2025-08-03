@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/tickets/([0-9]+)$ /api/read_single.php?id=$1 [L]
+RewriteRule ^api/tickets$ /api/read.php [L]
